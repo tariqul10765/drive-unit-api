@@ -14,6 +14,9 @@ const cors = require('cors');
  *  Router File Import
  */
 const productsRoutes = require('./routes/products');
+const orderRoutes = require('./routes/order');
+const reviewRoutes = require('./routes/review');
+const userRoutes = require('./routes/user');
 
 /**
  * MAIN APP CONFIG
@@ -27,6 +30,9 @@ app.use(cors())
  * MAIN BASE ROUTER WITH IMPORTED ROUTES
  */
 app.use('/products', productsRoutes);
+app.use('/order', orderRoutes);
+app.use('/review', reviewRoutes);
+app.use('/user', userRoutes);
 
 /**
  * MAIN BASE GET PATH

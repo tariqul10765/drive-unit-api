@@ -12,9 +12,9 @@ const router = express.Router();
  */
 
 router.get('/product-list', controller.productList);
-// router.get('/get-single-room/:id', controller.getRoomById);
-// router.post('/add-room', controller.addRoom);
-// router.delete('/delete-room/:id', controller.deleteRoomById);
+router.get('/get-single-product/:productId', controller.getSingleProduct);
+router.post('/add-product', controller.addProduct);
+router.delete('/delete-product/:productId', controller.deleteProductById);
 // router.put('/update-room/:id', controller.updateRoom);
 
 // Export All router..
